@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { BookContext } from '../contexts/BookContext';
 import BookDetails from './BookDetails'
 
-const Booklist = () => {
+const BookList = () => {
     const { books } = useContext(BookContext)
     return books.length ? (
         <div className="book-list">
@@ -19,4 +19,4 @@ const Booklist = () => {
             <div className="empty">No books to read. Hello free time</div>
         )
 }
-export default Booklist
+export default BookList
